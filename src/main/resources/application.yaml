@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-3-playground
+    version: v0.1.0
+
+  #USE MYSQL
+  r2dbc:
+    url: r2dbc:mysql://10.1.205.224:3306/langchain
+    username: zexd
+    password: abc
+
+  # Logging Details
+  codec:
+    log-request-details: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        data: DEBUG
+        r2dbc: DEBUG
